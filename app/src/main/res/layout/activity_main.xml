@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg1"
+    >
+
+    <TextView
+        android:id="@+id/signup_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="129dp"
+        android:text="@string/signup_title"
+        android:textSize="36sp" />
+
+    <EditText
+        android:id="@+id/username_edt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signup_txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100sp"
+        android:ems="15"
+        android:hint="@string/username_hint"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/password_edt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username_edt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50sp"
+        android:ems="15"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword"
+        />
+
+    <EditText
+        android:id="@+id/confirmpassword_edt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/password_edt"
+        android:layout_marginTop="50sp"
+        android:inputType="textPassword"
+        android:hint="@string/confirm_password_hint"
+        android:ems="15"
+        />
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/confirmpassword_edt"
+        android:layout_marginTop="40sp"
+        android:ems="10"
+        android:textColor="@color/white"
+        android:text="@string/signup"
+        android:backgroundTint="@color/teal_700"
+        />
+
+    <TextView
+        android:id="@+id/exsituser_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/login_btn"
+        android:layout_marginTop="30sp"
+        android:text="@string/exsiting_user_txt"
+        android:textColor="@color/purple_700"
+        />
+
+
+
+</RelativeLayout>

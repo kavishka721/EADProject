@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">fuelmgt</string>
+    <string name="login">LOGIN</string>
+    <string name="signup">SIGNUP</string>
+    <string name="signup_title">SIGN UP</string>
+    <string name="username_etxt">Username</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="confirm_password_hint">Confirm Password</string>
+    <string name="exsiting_user_txt">Exsiting User</string>
+</resources>
