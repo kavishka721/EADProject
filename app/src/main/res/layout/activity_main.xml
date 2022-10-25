@@ -40,20 +40,18 @@
         android:layout_marginTop="50sp"
         android:ems="15"
         android:hint="@string/password_hint"
-        android:inputType="textPassword"
-        />
+        android:inputType="textPassword" />
 
     <EditText
         android:id="@+id/confirmpassword_edt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_below="@id/password_edt"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="50sp"
-        android:inputType="textPassword"
-        android:hint="@string/confirm_password_hint"
         android:ems="15"
-        />
+        android:hint="@string/confirm_password_hint"
+        android:inputType="textPassword" />
 
     <Button
         android:id="@+id/login_btn"
@@ -72,13 +70,10 @@
         android:id="@+id/exsituser_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_below="@id/login_btn"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="30sp"
         android:text="@string/exsiting_user_txt"
-        android:textColor="@color/purple_700"
-        />
-
-
+        android:textColor="@color/purple_700" />
 
 </RelativeLayout>
