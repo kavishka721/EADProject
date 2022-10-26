@@ -9,4 +9,9 @@
     <string name="confirm_password_hint">Confirm Password</string>
     <string name="exsiting_user_txt">Exsiting User</string>
     <string name="no_acc">Don\'t have an account</string>
+    <string name="select_user_type">Select User Type</string>
+    <string name="fuel_station_owner_tag">Fuel Station Owner</string>
+    <string name="user_tag">USER</string>
+    <string name="hint_phone">Phone</string>
+    <string name="btn_submit">Submit</string>
 </resources>

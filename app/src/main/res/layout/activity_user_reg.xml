@@ -4,9 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@drawable/bg1"
-    >
+    tools:context=".UserReg">
 
     <TextView
         android:id="@+id/signup_txt"
@@ -20,18 +18,8 @@
         android:text="@string/signup_title"
         android:textSize="36sp" />
 
-    <TextView
-        android:id="@+id/show_name"
-        android:layout_width="180sp"
-        android:layout_height="50sp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_above="@id/signup_txt"
-        android:layout_marginTop="20sp"
-        />
-
     <EditText
-        android:id="@+id/username_edt"
+        android:id="@+id/us_username_edt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/signup_txt"
@@ -42,10 +30,10 @@
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/password_edt"
+        android:id="@+id/us_password_edt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/username_edt"
+        android:layout_below="@id/us_username_edt"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50sp"
         android:ems="15"
@@ -54,11 +42,11 @@
         />
 
     <EditText
-        android:id="@+id/confirm_password_edt"
+        android:id="@+id/us_confirmpassword_edt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/password_edt"
+        android:layout_below="@id/us_password_edt"
         android:layout_marginTop="50sp"
         android:inputType="textPassword"
         android:hint="@string/confirm_password_hint"
@@ -66,19 +54,16 @@
         />
 
     <Button
-        android:id="@+id/login_btn"
+        android:id="@+id/us_signup_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/confirm_password_edt"
         android:layout_centerHorizontal="true"
+        android:layout_below="@+id/us_confirmpassword_edt"
         android:layout_marginTop="40sp"
-        android:backgroundTint="@color/teal_700"
         android:ems="10"
-        android:onClick="btnSignUp"
+        android:textColor="@color/white"
         android:text="@string/signup"
-        android:textColor="@color/white" />
-
-
-
+        android:backgroundTint="@color/teal_700"
+        />
 
 </RelativeLayout>

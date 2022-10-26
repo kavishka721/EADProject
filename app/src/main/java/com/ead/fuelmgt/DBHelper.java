@@ -16,7 +16,7 @@ public class DBHelper extends SQLiteOpenHelper {
     //add a _ for above string
 
     private static final String DATABASE_NAME = "UserDB";
-    private static final String DATABASE_TABLE = "user";
+    private static final String DATABASE_TABLE = "test";
     private static final int DATABASE_VERSION = 1;
 
 //    private ContactDB.DBhelper ourHelper;
@@ -44,6 +44,10 @@ public class DBHelper extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_TABLE);
         onCreate(db);
+    }
+
+    public void openDatabase() {
+        database = this.getWritableDatabase();
     }
 
     public boolean checkUsername(String username) {
