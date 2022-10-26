@@ -3,6 +3,10 @@
     <string name="login">LOGIN</string>
     <string name="signup">SIGNUP</string>
     <string name="signup_title">SIGN UP</string>
+    <string name="station_owner_title">STATION OWNER DASHBOARD</string>
+    <string name="queue">Lets get into the Queue</string>
+    <string name="user_title">USER DASHBOARD</string>
+    <string name="station_subtitle">FUEL</string>
     <string name="username_etxt">Username</string>
     <string name="username_hint">Username</string>
     <string name="password_hint">Password</string>
