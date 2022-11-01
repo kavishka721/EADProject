@@ -30,23 +30,15 @@ public class MainActivity extends AppCompatActivity {
         loginBtn = ( Button) findViewById(R.id.login_btn);
         nameTxt = (TextView) findViewById(R.id.show_name);
 
-
-
         dbHelper = new DBHelper(this);
         dbHelper.openDatabase();
-
-//        loginBtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//            }
-//        });
     }
 
+    //signup btn onclick method ( validate password, confirm password before signup
     public void btnSignUp(View view) {
-        String username = username_edt.getEditableText().toString();
-        String password =  password_edt.getEditableText().toString();
-        String cPassword = confirmPassword_etd.getEditableText().toString();
+        String username = username_edt.getEditableText().toString().trim();
+        String password =  password_edt.getEditableText().toString().trim();
+        String cPassword = confirmPassword_etd.getEditableText().toString().trim();
         Log.i("VALUES", username+ password+ cPassword);
         nameTxt.setText(username);
         //

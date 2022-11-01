@@ -50,6 +50,7 @@ public class DBHelper extends SQLiteOpenHelper {
         database = this.getWritableDatabase();
     }
 
+    //check username method
     public boolean checkUsername(String username) {
         SQLiteDatabase database = this.getWritableDatabase();
         Cursor cursor = database.rawQuery("select * from "+DATABASE_TABLE+" where "+KEY_USERNAME+"=?",new String[]{username});
@@ -60,6 +61,7 @@ public class DBHelper extends SQLiteOpenHelper {
         }
     }
 
+    //check username password whether these are already in the db
     public boolean checkUsernamePassword(String username, String password) {
         SQLiteDatabase database = this.getWritableDatabase();
         Cursor cursor = database.rawQuery("select * from "+DATABASE_TABLE+" where "+KEY_USERNAME+"=? and "+KEY_PASSWORD+"=?",

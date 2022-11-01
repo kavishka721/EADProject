@@ -28,16 +28,16 @@ public class Login extends AppCompatActivity {
         dbHelper = new DBHelper(this);
         dbHelper.openDatabase();
 
-        //login btn onclick method
+        //login btn onclick method ( check username, password when login
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String username = username_edt.getEditableText().toString();
-                String password = password_edt.getEditableText().toString();
+                String username = username_edt.getEditableText().toString().trim();
+                String password = password_edt.getEditableText().toString().trim();
 
                 if(dbHelper.checkUsernamePassword(username, password)) {
                     Toast.makeText(getApplicationContext(), "Login Successfully", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(getApplicationContext(), Home.class));
+                    startActivity(new Intent(getApplicationContext(), User_Mainpage.class));
                 } else {
                     Toast.makeText(getApplicationContext(), "Login credentials are invalid", Toast.LENGTH_SHORT).show();
                 }
@@ -45,11 +45,11 @@ public class Login extends AppCompatActivity {
             }
         });
 
-
+        //navigate to signup page
         signupBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), UserSelect.class));
+                startActivity(new Intent(getApplicationContext(), MainActivity.class));
             }
         });
     }

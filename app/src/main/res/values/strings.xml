@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">fuelmgt</string>
+    <string name="app_name">Fuel Managemnt</string>
     <string name="login">LOGIN</string>
     <string name="signup">SIGNUP</string>
     <string name="signup_title">SIGN UP</string>
@@ -18,4 +18,5 @@
     <string name="user_tag">USER</string>
     <string name="hint_phone">Phone</string>
     <string name="btn_submit">Submit</string>
+    <string name="show_btn">SHOW</string>
 </resources>

@@ -2,7 +2,9 @@ package com.ead.fuelmgt.Entity;
 
 import com.google.gson.annotations.SerializedName;
 
-public class FuelStation {
+import java.io.Serializable;
+
+public class FuelStation implements Serializable {
 
     @SerializedName("StationId")
     public int StationId;
@@ -33,7 +35,7 @@ public class FuelStation {
         StationName = stationName;
     }
 
-    public boolean isStatus() {
+    public boolean getStatus() {
         return Status;
     }
 
