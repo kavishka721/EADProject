@@ -16,7 +16,7 @@ public class DBHelper extends SQLiteOpenHelper {
     //add a _ for above string
 
     private static final String DATABASE_NAME = "UserDB";
-    private static final String DATABASE_TABLE = "user";
+    private static final String DATABASE_TABLE = "test";
     private static final int DATABASE_VERSION = 1;
 
 //    private ContactDB.DBhelper ourHelper;
@@ -46,6 +46,11 @@ public class DBHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
+    public void openDatabase() {
+        database = this.getWritableDatabase();
+    }
+
+    //check username method
     public boolean checkUsername(String username) {
         SQLiteDatabase database = this.getWritableDatabase();
         Cursor cursor = database.rawQuery("select * from "+DATABASE_TABLE+" where "+KEY_USERNAME+"=?",new String[]{username});
@@ -56,6 +61,7 @@ public class DBHelper extends SQLiteOpenHelper {
         }
     }
 
+    //check username password whether these are already in the db
     public boolean checkUsernamePassword(String username, String password) {
         SQLiteDatabase database = this.getWritableDatabase();
         Cursor cursor = database.rawQuery("select * from "+DATABASE_TABLE+" where "+KEY_USERNAME+"=? and "+KEY_PASSWORD+"=?",

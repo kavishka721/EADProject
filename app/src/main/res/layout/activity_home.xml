@@ -16,4 +16,14 @@
         android:text="Home"
         android:textSize="45sp" />
 
+    <TextView
+        android:id="@+id/sname_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="206dp"
+        android:text="TextView" />
+
+
 </RelativeLayout>

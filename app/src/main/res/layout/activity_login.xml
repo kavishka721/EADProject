@@ -7,13 +7,13 @@
     tools:context=".Login"
     android:background="@drawable/bg1">
 
-    <com.google.android.material.textview.MaterialTextView
+    <TextView
         android:id="@+id/login_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="50dp"
         android:text="LOGIN"
         android:textSize="45sp" />
 
@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/login_title"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100sp"
+        android:layout_marginTop="60sp"
         android:ems="15"
         android:hint="@string/username_hint"
         android:inputType="textPersonName" />
@@ -46,7 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/lpassword_edt"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100sp"
+        android:layout_marginTop="80sp"
         android:backgroundTint="@color/teal_700"
         android:ems="10"
         android:text="@string/login"
@@ -56,11 +56,23 @@
         android:id="@+id/exsituser_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_below="@id/login_btn"
+        android:layout_marginStart="70sp"
         android:layout_marginTop="30sp"
         android:text="@string/no_acc"
-        android:textColor="@color/purple_700"
-        />
+        android:textColor="@color/purple_700" />
+
+    <Button
+        android:id="@+id/lsignup_btn"
+        android:layout_width="120sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_btn"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_toEndOf="@+id/exsituser_txt"
+        android:backgroundTint="@color/purple_200"
+        android:ems="10"
+        android:text="@string/signup"
+        android:textColor="@color/white" />
 
 </RelativeLayout>

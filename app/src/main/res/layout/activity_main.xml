@@ -20,6 +20,16 @@
         android:text="@string/signup_title"
         android:textSize="36sp" />
 
+    <TextView
+        android:id="@+id/show_name"
+        android:layout_width="180sp"
+        android:layout_height="50sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/signup_txt"
+        android:layout_marginTop="20sp"
+        />
+
     <EditText
         android:id="@+id/username_edt"
         android:layout_width="wrap_content"
@@ -40,45 +50,35 @@
         android:layout_marginTop="50sp"
         android:ems="15"
         android:hint="@string/password_hint"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        />
 
     <EditText
-        android:id="@+id/confirmpassword_edt"
+        android:id="@+id/confirm_password_edt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/password_edt"
         android:layout_centerHorizontal="true"
+        android:layout_below="@id/password_edt"
         android:layout_marginTop="50sp"
-        android:ems="15"
+        android:inputType="textPassword"
         android:hint="@string/confirm_password_hint"
-        android:inputType="textPassword" />
+        android:ems="15"
+        />
 
     <Button
         android:id="@+id/login_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/confirm_password_edt"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/confirmpassword_edt"
         android:layout_marginTop="40sp"
-        android:ems="10"
-        android:textColor="@color/white"
-        android:text="@string/signup"
         android:backgroundTint="@color/teal_700"
-        />
-
-<<<<<<< HEAD
-    <TextView
-        android:id="@+id/exsituser_txt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/login_btn"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30sp"
-        android:text="@string/exsiting_user_txt"
-        android:textColor="@color/purple_700" />
-=======
+        android:ems="10"
+        android:onClick="btnSignUp"
+        android:text="@string/signup"
+        android:textColor="@color/white" />
 
 
->>>>>>> 2b6ce3cea0247cc59c7c136a6c7a80a787980de3
+
 
 </RelativeLayout>
