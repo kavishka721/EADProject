@@ -104,7 +104,7 @@
         android:layout_marginTop="59dp"
         android:layout_marginEnd="49dp"
         android:background="@drawable/btn"
-        android:text="Button"
+        android:text="SHOW"
         android:textColor="@color/teal_700" />
 
 </RelativeLayout>

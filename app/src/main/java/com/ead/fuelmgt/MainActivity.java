@@ -15,7 +15,6 @@ import java.io.Console;
 public class MainActivity extends AppCompatActivity {
     Button loginBtn;
     EditText username_edt, password_edt, confirmPassword_etd;
-
     DBHelper dbHelper;
 
     @Override
